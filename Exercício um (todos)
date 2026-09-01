@@ -1,0 +1,95 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner e = new Scanner(System.in);
+        int numero;
+        System.out.println("Qual exercício você quer ver? (APENAS NÚMERO)");
+        numero = e.nextInt();
+        if (numero == 1){
+            double dado;
+            System.out.println("Digite um número: ");
+            dado = 2*(e.nextDouble());
+            System.out.println("O dobro do seu número é: " + dado);
+        }
+        if (numero == 2){
+            double um, dois, tres, caixa;
+            System.out.println("Digite..");
+            System.out.println("O primeiro número: ");
+            um = e.nextDouble();
+            caixa = um;
+            System.out.println("O segundo número: ");
+            dois = e.nextDouble();
+            caixa += dois;
+            System.out.println("O terceiro número: ");
+            tres = e.nextDouble();
+            caixa += tres;
+            System.out.println("A soma dos números é: " + caixa);
+            caixa = (um + dois + tres)/3;
+            System.out.println("E a média aritimética é: " + caixa);
+        }
+        if (numero == 3){
+            int idade;
+            System.out.println("Digite sua idaide: ");
+            idade = e.nextInt();
+            idade = idade * 12;
+            System.out.println("Sua idade em meses é: " + idade);
+        }
+        if (numero == 4){
+            double valor;
+            double calculo;
+            System.out.println("Qual o valor do produto?");
+            valor = e.nextDouble();
+            calculo = valor - (valor * 0.1);
+            System.out.println("O Valor com desconto de 10% é: R$" + calculo);
+        }
+        if (numero == 5){
+            double altura;
+            double peso;
+            double imc;
+            System.out.println(" Digite...");
+            System.out.println("Sua altura (em metros): ");
+            altura = e.nextDouble();
+            System.out.println("Seu peso (em quilogramas");
+            peso = e.nextDouble();
+            imc = peso/Math.pow(altura, 2);
+            System.out.println("Seu imc é igual a: " + imc);
+
+        }
+        if (numero == 6){
+            double dinheiro;
+            double aumento;
+            double calculo;
+            System.out.println("Qual é o valor do salário?: ");
+            dinheiro = e.nextDouble();
+            System.out.println("Qual será o aumento? (em %)");
+            aumento = e.nextDouble();
+            System.out.println("Salário: " + dinheiro);
+            calculo = dinheiro * (aumento/100);
+            System.out.println("Reajuste: " + calculo);
+            calculo = calculo + dinheiro;
+            System.out.println("Novo salário: " + calculo);
+
+        }
+        if (numero == 7){
+            String A;
+            String B;
+            String teste;
+            System.out.println("primeiro: ");
+            teste = e.nextLine();
+            A = e.nextLine();
+            System.out.println("A: " + A);
+            System.out.println("segundo: ");
+            B = e.nextLine();
+            System.out.println("B: " + B);
+            System.out.println("Agora: ");
+            System.out.println("A: " + B);
+            System.out.println("B: " + A);
+
+
+        }
+
+
+
+
+        }
+    }
