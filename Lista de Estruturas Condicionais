@@ -1,0 +1,99 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner e = new Scanner(System.in);
+        double a;
+        System.out.println("Digite seu número: ");
+        a = e.nextDouble();
+        if (a > 0) {
+            System.out.println("O número " + a + " é positivo.");
+        } else if ( a < 0 ) {
+            System.out.println("O número " + a + " é negativo");
+        }else {
+            System.out.println("O número é " + a);
+        }
+        }
+        if (numero == 2){
+        int idade;
+        System.out.println("Digite sua idade");
+        idade = e.nextInt();
+        if (idade == 0) {
+            System.out.println("Idade inválida");
+        }else if ( idade > 0 && idade <18){
+            System.out.println("Menor de idade verificado!!!");
+        }else {
+            System.out.println("Maior de idade verificado");
+        }
+        }
+        if (numero == 3){
+        double nota;
+        System.out.println("Nota do aluno:");
+        nota = e.nextDouble();
+        if (nota >= 7){
+            System.out.println("nota:" + nota + "aluno APROVADO");
+        }else{
+            System.out.println("nota: " + nota + "Aluno em recuperação...");
+        }
+        }
+        if (numero == 4){
+        double valor;
+        System.out.println("Digite o valor da compra...");
+        valor = e.nextDouble();
+        if ( valor >= 100){
+            System.out.println("Valor com desconto: " + valor*0.9);
+        } else {
+            System.out.println("Valor: " + valor);
+        }
+        }
+        if (numero == 5){
+        double A;
+        double B;
+        System.out.println("Digite o número: ");
+        A = e.nextDouble();
+        System.out.println("Digite o divisor: ");
+        B = e.nextDouble();
+        if ( A % B == 0) {
+            System.out.println("o número " + A + " é divisível por " + B);
+        }else {
+            System.out.println("o número " + A + " não é divisível por " + B);
+        }   
+
+        }
+        if (numero == 6){
+        double C;
+        System.out.println("Digite o número: ");
+        C = e.nextDouble();
+        System.out.println("o número: " + C + " é divísivel por: ");
+        if ( C % 10 == 0) {
+            System.out.println("10");
+        }
+        if ( C % 5 == 0) {
+            System.out.println("5");
+        }
+        if ( C % 2 == 0) {
+            System.out.println("2");
+        }
+        }
+        if (numero == 7){
+        double D;
+        System.out.println("Digite o número: ");
+        D = e.nextDouble();
+        if ( D % 3 == 0 && D % 7 == 0 ) {
+            System.out.println("O número " + D + " é divisível por 7 e 3");
+
+        } else {
+            System.out.println(" O número não é divisível por 7 ou 3");
+        }
+        }
+        if (numero ==8){
+        double valor_pedido;
+        System.out.println("Qual valor você quer sacar? ");
+        valor_pedido = e.nextDouble();
+        if (valor_pedido > 1000){
+            System.out.println("Não foi possível sacar, valor maior que o disponível");
+
+        }else {
+            System.out.println(valor_pedido + " reais resgatos");
+        }
+        }
+    }
