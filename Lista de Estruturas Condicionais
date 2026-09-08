@@ -2,6 +2,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner e = new Scanner(System.in);
+        int numero;
+        System.out.println("Qual exercício você quer ver? (APENAS NÚMERO)");
+        numero = e.nextInt();
+        if (numero == 1){
         double a;
         System.out.println("Digite seu número: ");
         a = e.nextDouble();
@@ -12,7 +16,7 @@ public class Main {
         }else {
             System.out.println("O número é " + a);
         }
-        }
+    }
         if (numero == 2){
         int idade;
         System.out.println("Digite sua idade");
@@ -24,7 +28,7 @@ public class Main {
         }else {
             System.out.println("Maior de idade verificado");
         }
-        }
+    }
         if (numero == 3){
         double nota;
         System.out.println("Nota do aluno:");
@@ -34,7 +38,7 @@ public class Main {
         }else{
             System.out.println("nota: " + nota + "Aluno em recuperação...");
         }
-        }
+    }
         if (numero == 4){
         double valor;
         System.out.println("Digite o valor da compra...");
@@ -44,7 +48,7 @@ public class Main {
         } else {
             System.out.println("Valor: " + valor);
         }
-        }
+    }
         if (numero == 5){
         double A;
         double B;
@@ -56,9 +60,9 @@ public class Main {
             System.out.println("o número " + A + " é divisível por " + B);
         }else {
             System.out.println("o número " + A + " não é divisível por " + B);
-        }   
-
         }
+
+    }
         if (numero == 6){
         double C;
         System.out.println("Digite o número: ");
@@ -73,7 +77,7 @@ public class Main {
         if ( C % 2 == 0) {
             System.out.println("2");
         }
-        }
+    }
         if (numero == 7){
         double D;
         System.out.println("Digite o número: ");
@@ -84,7 +88,7 @@ public class Main {
         } else {
             System.out.println(" O número não é divisível por 7 ou 3");
         }
-        }
+    }
         if (numero ==8){
         double valor_pedido;
         System.out.println("Qual valor você quer sacar? ");
@@ -95,5 +99,5 @@ public class Main {
         }else {
             System.out.println(valor_pedido + " reais resgatos");
         }
-        }
     }
+}}
