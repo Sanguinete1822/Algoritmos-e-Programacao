@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+    public static void main (String[] args) {
+        Scanner e = new Scanner(System.in);
+        int n;
+        System.out.println("Escolha um número: ");
+        n = e.nextInt();
+        for (int i = n; i > 1; i--){
+            i--;
+            n = n*i;
+            i++;
+        }
+        System.out.println(n);
+    }
+}
