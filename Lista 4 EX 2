@@ -1,0 +1,57 @@
+import java.util.Objects;
+import java.util.Scanner;
+public class Main {
+    public static void main (String[] args) {
+        Scanner e = new Scanner(System.in);
+        double sal ;
+        double msal = 0;
+        double fil;
+        double medsal;
+        double medfil;
+        double somasal = 0;
+        double somafil = 0;
+        double salmin = 0;
+
+        int pes = 0;
+        boolean cont = true;
+        String resposta;
+        while (cont) {
+            System.out.println("número de pessoas consultadas: ");
+            pes = e.nextInt();
+            for (int n = 0 ; n < pes ; n++ ){
+                n++;
+                System.out.println("Dados pessoa " + n);
+                n--;
+                System.out.println("Salário: ");
+                sal = e.nextDouble();
+                somasal += sal;
+                if (sal > msal){
+                    msal = sal;
+                }
+                if (sal <= 1622){
+                    salmin++;
+                }
+                System.out.println("número de filhos: ");
+                fil = e.nextDouble();
+                somafil += fil;
+            }
+            medsal = somasal/pes;
+            medfil = somafil/pes;
+            salmin = (salmin/pes)*100;
+            System.out.println("A)" + medsal);
+            System.out.println("B)" + medfil);
+            System.out.println("C)" + msal);
+            System.out.println("D)" + salmin);
+            resposta = e.nextLine();
+            System.out.println("Gostaria de continuar? S/n");
+            resposta = e.nextLine();
+            if (Objects.equals(resposta, "S")){
+                cont = true;
+            } else {
+                cont = false;
+            }
+
+
+        }
+    }
+}
